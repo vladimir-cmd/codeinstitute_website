@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital@1&family=Source+Sans+Pro:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: DM Mono, Source Sans Pro, Geneva, Tahoma, sans-serif;
+  /* color: lightblue; */
+}
+
+h2 {
+  font-family: DM Mono, Source Sans Pro, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  /* color: lightblue; */
+}
+
+nav ul li a {
+  font-family: DM Mono, Source Sans Pro, Geneva, Tahoma, sans-serif;
+  /* color: lightblue; */
+}
+
+#logo {
+  opacity: 75%;
+  margin: 15px;
+  font-size: 200%;
+  float: left;
+  letter-spacing: 1px;
+}
+
+.active{
+     border-bottom: 1px solid #777777;
+}
+
+#navigation {
+  font-size: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  list-style-type: none;
+}
+
+#navigation li {
+  float: right;
+  margin: 25px;
+  overflow: visible;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#main_img {
+  height: 600px;
+  width: 100%;
+  background: url("/assets/img/food_table.jpg") no-repeat center center;
+  animation-name: main_img;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+#main_img_outer {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes main_img {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* #cover-text h2 {
+  color: red;
+  padding-top: 20px;
+  opacity: 100%;
+}
+
+#cover-text h3 {
+  color: red;
+  padding-bottom: 20px;
+  opacity: 100%;
+}
+
+#cover-text {
+  color: green;
+  font-size: 100%;
+  bottom: 270px;
+  right: 350px;
+  background-color: aquamarine;
+  opacity: 40%;
+  height: 100px;
+  width: 400px;
+  position: absolute;
+} */
+
+#site-description {
+  height: 400px;
+  width: 100%;
+  /* background-color: lightcoral; */
+}
+
+#left-panel{
+  padding-top: 30px;
+  width: 30%;
+  float: left;
+}
+
+#right-panel{
+  padding-top: 30px;
+  width: 30%;
+  float: right;
+}
+
+#center-panel{
+  padding-top: 30px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+hr {
+  border-top: 1px solid #777777;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.left-panel-heading {
+  width: 100%;
+  float: left;
+  line-height: 20px;
+  clear: both;
+  margin-bottom: 50px;
+}
+
+.right-panel-heading {
+  width: 100%;
+  float: right;
+  line-height: 20px;
+  clear: both;
+  margin-bottom: 50px;
+}
+
+#welcome {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 280%;
+}
+
+.center-panel-square {
+  width: 100%;
+  height: 250px;
+  /* padding: 30px; */
+  /* border-style: solid;
+  border-color: blue;
+  border-width: 1px; */
+  margin: 0 auto;
+}
+
+#square-cover-bg {
+  background: url("/assets/img/ruske-kape.JPG") no-repeat center center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+#recipes {
+  background-image: url("/assets/img/food_table.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+#recipes div {
+  color: #fafafa;
+  background-color: rgba(0,0,0, .6);
+  width: 19%;
+  height: 300px;
+  float: left;
+  padding: 30px 0 0 10px;
+  text-align: center;
+  margin: 4px;
+}
+
+.social-networks {
+  text-align: center;
+}
+
+.social-networks li {
+  display: inline;
+}
+
+.social-networks i {
+  font-size: 160%;
+  margin: 1%;
+  padding: 5%;
+  color: #777777;
+}
+
+#photo {
+  clear: both;
+  line-height: 0;
+  column-count: 3;
+  column-gap: 0px;
+}
+
+#photo img {
+  width: 100%;
+}
+
+/* form */
+
+.form-section {
+    clear: left;
+    background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.signup-form {
+  margin-top: 150px;
+  color: #fff;
+  background-color: rgba(60,60,60,0.6);
+  max-width: 400px;
+  position: absolute;
+  left: 10%;
+  padding: 30px;
+}
+
+.signup-form h2 {
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+
+.text-input {
+  background-color: transparent;
+  color: #fafafa;
+  width: 100%;
+  height: 25px;
+  margin: 5px 0 20px 0;
+  border: solid 1px #fafafa;
+  border-radius: 2px;
+}
+
+.text-input:hover {
+  border-color: #f16c6b;
+}
+
+.join-button {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px 15px 32px;
+  text-align: center;
+  font-size: 100%;
+  background-color: #f16c6b;
+  color: #fafafa;
+  display: block;
+}
+
+.join-button:hover {
+  background: #fafafa;
+  color: #f16c6b;
+}
+
+/*end form*/
+
+@media screen and (max-width: 1393px) {
+  #site-description{
+    width: 65%;
+    height: 1200px;
+    margin: 0 auto;
+  }
+
+  #welcome {
+    padding: 30px 0;
+    margin-top: 0;
+  }
+
+  #left-panel, #right-panel {
+    width: 100%;
+    float: left;
+    padding: 0;
+  }
+
+  #center-panel {
+    clear: both;
+    width: 100%;
+    float: left;
+    padding: 0;
+  }
+
+  #recipes div {
+    width: 100%;
+    clear: both;
+    height: 150px;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-color: white;
+  }
+
+}
+
+@media screen and (max-width: 943px) {
+  #navigation {
+    clear: left;
+    float: left;
+    margin-left: 50px;
+    /* margin-bottom: 20px; */
+    line-height: 25px;
+  }
+
+  #logo {
+    margin-left: 80px;
+  }
+
+  #welcome {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .right-panel-heading, .left-panel-heading {
+    width: inherit;
+  
+  }
+  
+  .right-panel-heading h2, .left-panel-heading h2 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .right-panel-heading p, .left-panel-heading p {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px 0 20px;
+  }
+
+  #photo {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #photo {
+    column-count: 2;
+  }
+}
